@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.project.mycarwashproject.presenter.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.project.mycarwashproject.presenter.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="uz.project.mycarwashproject.presenter.register.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_signUpFragment"
+        app:destination="@id/signUpFragment"
+        app:popUpTo="@id/mainFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/addVehicleNumFragment"
+        android:name="uz.project.mycarwashproject.presenter.addvehiclenum.AddVehicleNumFragment"
+        android:label="fragment_add_vehicle"
+        tools:layout="@layout/fragment_vehiclenum" />
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="uz.project.mycarwashproject.presenter.addvehicle.AddVehicleFragment"
+        android:label="fragment_vehiclenum"
+        tools:layout="@layout/fragment_add_vehicle">
+        <action
+            android:id="@+id/action_addVehicleFragment_to_vehicleFragment"
+            app:destination="@id/vehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleFragment"
+        android:name="uz.project.mycarwashproject.presenter.vehicle.VehicleFragment"
+        android:label="fragment_vehicle"
+        tools:layout="@layout/fragment_vehicle">
+        <action
+            android:id="@+id/action_vehicleFragment_to_addVehicleNumFragment"
+            app:destination="@id/addVehicleNumFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_addVehicleNumFragment" app:destination="@id/addVehicleNumFragment" />
+    <action android:id="@+id/action_global_vehicleFragment" app:destination="@id/vehicleFragment" />
+    <action
+        android:id="@+id/action_global_addVehicleFragment"
+        app:destination="@id/addVehicleFragment" />
+    <action
+        android:id="@+id/action_global_SelectPriceFragment"
+        app:destination="@id/selectPriceFragment" />
+    <fragment
+        android:id="@+id/selectPriceFragment"
+        android:name="uz.project.mycarwashproject.presenter.selectprice.SelectPriceFragment"
+        android:label="SelectPriceFragment"
+        tools:layout="@layout/fragment_select_price" />
+</navigation>

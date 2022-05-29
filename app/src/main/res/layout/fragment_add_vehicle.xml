@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEAF1"
+    tools:context=".presenter.addvehiclenum.AddVehicleNumFragment">
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TitleCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your cars"
+        android:textSize="32sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginStart="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/yourcars_rcview"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/horizontal_card_item"
+        app:layout_constraintTop_toBottomOf="@id/TitleCar"
+        />
+
+    <ImageButton
+        android:id="@+id/add_my_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_outlined_ic"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

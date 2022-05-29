@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#00BCD4</color>
+    <color name="purple_500">#03A9F4</color>
+    <color name="purple_700">#2196F3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#DE000000</color>
+    <color name="blue">#0040CE</color>
+    <color name="mainBackground">#F2F2F4</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+
+    <color name="green">#53B175</color>
+    <color name="darkGreen">#0C7733</color>
+    <color name="myBlack">#181725</color>
+    <color name="lightGray">#E2E2E2</color>
+    <color name="gray">#B1B1B1</color>
+    <color name="darkerGray">#7C7C7C</color>
+    <color name="red">#F44336</color>
+    <color name="myGray">#605F65</color>
+    <color name="myBlue">#3EB9CC</color>
+    <color name="myDark1">#26252B</color>
+    <color name="myDark2">#3D3E50</color>
+    <color name="myDark3">#20232C</color>
+    <color name="myDark4">#363845</color>
+    <color name="myDark5">#2E2E38</color>
+
+    <color name="category1">#EEF7F1</color>
+    <color name="category2">#FEF6ED</color>
+    <color name="category3">#FDE8E4</color>
+    <color name="category4">#F4EBF7</color>
+    <color name="category5">#FFF8E5</color>
+    <color name="category6">#EDF7FC</color>
+    <color name="category7">#E7E4F9</color>
+    <color name="category8">#EFDAE2</color>
+
+    <color name="lightYellow">#FFD661</color>
+    <color name="lightRed">#FF7C7C</color>
+    <color name="myDark">#2B2B2B</color>
+    <color name="myLightPurple">#B8A3E1</color>
+    <color name="myDarkPurple">#3B2857</color>
+    <color name="snackbar_action_text_color">#3A2CD1</color>
+</resources>

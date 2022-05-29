@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomMain"
+        android:icon="@drawable/ic_home_bottom"
+        android:title="Main" />
+
+    <item
+        android:id="@+id/bottomHistory"
+        android:icon="@drawable/ic_history_bottom"
+        android:title="History" />
+
+    <item
+        android:id="@+id/bottomQueue"
+        android:icon="@drawable/ic_queue_bottom"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/bottomAbout"
+        android:icon="@drawable/ic_about_bottom"
+        android:title="About" />
+    <item
+        android:id="@+id/bottomProfile"
+        android:icon="@drawable/ic_profile_bottom"
+        android:title="Profile" />
+
+
+</menu>
